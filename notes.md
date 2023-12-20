@@ -110,3 +110,118 @@ let someNumber = 50
 let stringNumber = String(someNumber)
 console.log(typeof stringNumber);
 console.log(stringNumber);
+
+====================================================================
+
+*** Comparisions ***
+
+/*
+   - We know comparision output in boolean form
+   - try to compare the same dataType values 
+   - Normal comparision
+    console.log(2>1);
+    console.log(2>=1);
+    console.log(2<1);
+    console.log(2<=1);
+    console.log(2!=1);
+    console.log(2==1);
+   
+    console.log(2==2); //ture
+    console.log("2"==2); //true
+    console.log("2"===2); //false
+
+    - while comparision dataType must be same
+
+    - comparision with null value
+        console.log(null > 0); // false
+        console.log(null == 0);// false
+        console.log(null >= 0);// true
+    
+    - comparision with undefined value
+        output always false while comparing the value with undefined value
+
+    - strict comparision
+        it checks value with dataType
+        console.log("2"==2); //true
+        console.log("2"===2); //false - its checking dataType as well
+*/
+
+=========================================================================================
+
+*** dataType discussion ***
+
+/*
+    primtive & non primtive 
+
+    1) Primtive
+        -Number
+        -String
+        -boolean
+        -null
+        -undefined
+        -symbol
+        -bigInt
+    
+    2) Non-Primtive (Reference type)
+        -Array
+            let cricketers = ["Sachin","Dhoni","Virat","ROhit"];
+
+        -Object
+            let myObj = {
+            name : "Sachin",
+            age : 22,
+            }
+         in curly bracket means that is object
+
+        -Function
+            const myFunction = function(){
+            console.log("Hello in my js function");
+}
+*/
+
+*** Heap & Stack discussion ***
+
+/*
+    - Stack memory used in primtive datatype
+    - Heap memory used in Non-primtive datatype
+*/
+
+let myYoutubename = "Code with Master"
+
+let anothername = myYoutubename
+anothername = "Code with Sachin"
+
+console.log(anothername); // o/p = Code with Sachin
+console.log(myYoutubename);// o/p = Code with Master
+
+/*
+    - in primtive datatype original value won't change 
+    - in stack value dont change because we always get the copy of the value
+*/
+
+let userOne = {
+    name : "Master",
+    age : 22,
+    email : "master123@gmail.com",
+}
+
+console.log(userOne.email);// o/p = master123@gmail.com
+
+
+let userTwo = userOne
+userTwo.email = "sachin123@gmail.com"
+
+console.log(userTwo.email);// o/p = sachin123@gmail.com
+console.log(userOne.email);// o/p = sachin123@gmail.com
+
+/*
+   - in Non-primtive or reference type datatype original value get change by changing the value of another variable
+     because here we are giving the reference to the another variable
+   - in heap section we always get the reference of the value
+*/
+
+
+
+
+
+
