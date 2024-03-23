@@ -369,4 +369,7 @@ console.log(Math.sqrt(25));// square root of 25 = 5
 console.log(Math.pow(5,2));// power 2 of 5 = 25
 console.log(Math.pow(5,3));// power 3 of 5 = 125
 
+===============================================================================================
+*** Date and Time ***
 
+// topic remaining
