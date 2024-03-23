@@ -220,8 +220,153 @@ console.log(userOne.email);// o/p = sachin123@gmail.com
    - in heap section we always get the reference of the value
 */
 
+========================================================================================
+
+*** String ***
+
+const name = "Sachin ";
+const run = 110;
+//console.log(name + run + " -1st century");// concat the string and number - so called old version to use like this
+
+console.log(`Hello i am ${name.toUpperCase()} and i scored today ${run} runs in my debute match`);
+// we use back tick - this is generally string interpolation 
+
+//const NewName = new String("Sachin Shirsath");
+//const NewName = new String('Sachin Shirsath');
+const NewName = new String(`Sachin Shirsath`);
+console.log(NewName);
+console.log(NewName.length);
+console.log(NewName.toUpperCase());
+console.log(NewName.charAt(3));
+console.log(NewName.indexOf('h'));
+
+const anotherstring = NewName.substring(0,4);
+console.log(anotherstring);
+const anotherstring1 = NewName.slice(1,4);// in slice we can give negative values also
+console.log(anotherstring1);
+
+const string = '    Sachin    1';
+console.log(string);
+console.log(string.trim());
+console.log(string.trimStart());
+console.log(string.trimEnd());
+
+// counting and removing white space
+const removeWhiteSpace = string.split(' ').join('');
+console.log(string.split(' '));
+console.log(removeWhiteSpace.length);
+console.log(string.length);
+const countWhiteSpace = string.length - removeWhiteSpace.length;
+console.log(countWhiteSpace);
 
 
 
+const stringOne = 'Sachin-Sanjay-Shirsath';
+console.log(stringOne.split('-'));
+
+
+
+/*
+    " " , ' ' , ` ` :- we can use to represent the String
+
+    *** String Methods ***
+    anchor()
+    at()
+    big()
+    blink()
+    bold()
+    charAt()
+    charCodeAt()
+    codePointAt()
+    concat()
+    String()
+    endsWith()
+    fixed()
+    fontcolor()
+    fontsize()
+    includes()
+    indexOf()
+    isWellFormed()
+    italics()
+    lastIndexOf()
+    link()
+    localeCompare()
+    match()
+    matchAll()
+    normalize()
+    padEnd()
+    padStart()
+    repeat()
+    replace()
+    replaceAll()
+    search()
+    slice()
+    small()
+    split()
+    startsWith()
+    strike()
+    sub()
+    substr()
+    substring()
+    sup()
+    toLocaleLowerCase()
+    toLocaleUpperCase()
+    toLowerCase()
+    toString()
+    toUpperCase()
+    toWellFormed()
+    trim()
+    trimEnd()
+    trimStart()
+    trimEnd()
+    trimStart()
+    valueOf()
+*/
+
+
+
+
+=========================================================================================
+
+*** Nums and Maths ***
+
+const score = 400;
+
+const balance = new Number(100);
+console.log(balance);
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(2));
+
+const anotherNum = 523.5;
+console.log(anotherNum.toPrecision(3));
+
+const hundreds = 1000000;
+console.log(hundreds.toLocaleString());
+
+//***************** Math ***************
+
+
+console.log(Math.abs(-5));// this will give you absoulte value whether it is negative value as well 
+console.log(Math.round(5.2));// this will roung off the value (if value 5.2 it'll do 5) or (if value 5.7 it'll do 6)
+console.log(Math.ceil(5.1));// this ceiling function automatically levelup the value at upper level o/p = 6
+console.log(Math.floor(5.6));// o/p = 5
+
+console.log(Math.random());// this will give the number within 0 to 1 (Range - 0 to 1)
+console.log(Math.random()*10);// this will give the number between the range of (1 to 10)
+console.log(Math.floor(Math.random()*10))
+console.log(Math.min(5,8,47,3,9));// this will give minimum value
+console.log(Math.max(5,8,47,3,9));// this will give maximum value
+
+
+// Range between two number
+const min = 10;
+const max = 20;
+
+console.log(Math.floor(Math.random() * (max - min + 1 ) + min));
+
+console.log(Math.sqrt(25));// square root of 25 = 5
+console.log(Math.pow(5,2));// power 2 of 5 = 25
+console.log(Math.pow(5,3));// power 3 of 5 = 125
 
 
